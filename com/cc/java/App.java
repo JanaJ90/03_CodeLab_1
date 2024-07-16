@@ -1,14 +1,23 @@
 package com.cc.java;
 
 public class App {
-    
     public static void main(String[] args) {
-    
+        Konto konto1 = new Konto();
+        Konto konto2 = new Konto();
+        Konto konto3 = new Konto();
+
+        System.out.println("Initial Kontostand:");
+        System.out.println("konto1: " + konto1.kontostand);
+        System.out.println("konto2: " + konto2.kontostand);
+        System.out.println("konto3: " + konto3.kontostand);
+
+        konto1.kontostand *= 2;
+        konto2.kontostand *= 3;
+        konto3.kontostand *= 10;
+
+        System.out.println("\nAktueller Kontostand:");
+        System.out.println("konto1: " + konto1.kontostand);
+        System.out.println("konto2: " + konto2.kontostand);
+        System.out.println("konto3: " + konto3.kontostand);
     }
-
-
-    private static void output(String outputStr) {
-        System.out.println(outputStr);
-    } 
-
 }
